@@ -56,7 +56,7 @@ class parentElement extends LitElement {
             </div>
             <child-element 
                 ?hidden="${this.childHidden}"
-                @hide-child="${this._hideChild()}"
+                @hide-child="${() => this._hideChild()}"
             ></child-element>
         `
     }
